@@ -1,0 +1,78 @@
+.section-team {
+    background-color: var(--bgn-section-color);
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
+
+.team-items {
+    background-color: var(--bgn-color);
+    width: calc((100% - 90px) / 4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}  
+
+.team-members-position {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.team-members {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    }
+
+.members-position {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:var(--text-color);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.team-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-social-item {
+    width:calc((100% - 30px) / 4);
+    height: 44px;
+    width: 44px;
+} 
+
+.team-social-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: background-color 250ms var(--cubic);
+    
+    &:hover,
+    &:focus {
+    background-color: var(--activation-color);  
+    }
+}
+
+.team-svg {
+    fill: #AFB1B8;
+    transition: fill 250ms var(--cubic);
+}
+
+.team-social-link:hover .team-svg,
+.team-social-link:focus .team-svg {
+    fill: var(--bgn-color); 
+}

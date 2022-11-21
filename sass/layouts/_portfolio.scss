@@ -1,0 +1,124 @@
+.portfolio {
+    background-color: var(--bgn-color);
+}
+
+.projects-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+}
+.portfolio-button {    
+    min-width: 73px;  
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+
+    border-color: transparent;
+    border-radius: 4px;
+    
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    background-color:var(--bgn-section-color);
+    transition: background-color 250ms var(--cubic), color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+    color: var(--bgn-color);
+    background-color: var(--activation-color); 
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);   
+    }
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio-item {
+    width: calc((100% - 60px) / 3); 
+}
+
+.portfolio-item-link{
+    display: block;
+    transition: box-shadow 250ms var(--cubic);   
+
+    &:hover,
+    &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    
+    &:hover .portfolio-top-text,
+    &:focus .portfolio-top-text {
+        transform: translateY(0);
+    }
+}
+
+.portfolio-top-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-top-text {
+    position: absolute;
+    top: 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    padding-left: 24px;
+    padding-bottom: 63px;
+    padding-right: 24px;
+    padding-top: 63px;
+   
+    color: var(--bgn-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    background-color: rgba(33, 150, 243, 0.9);
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms var(--cubic);
+    overflow: auto; 
+}
+
+.portfolio-project-name {
+    margin-bottom: 4px;
+
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--black-color); 
+}
+
+.portfolio-project-type {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+.portfolio-item-second-part {
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-top: 20px;
+
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: var(--border-color);
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--border-color);
+
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: var(--border-color);
+}
