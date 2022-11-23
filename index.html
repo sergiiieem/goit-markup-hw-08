@@ -13,7 +13,7 @@
 
 <body>
     <!--верхня лінія-->
-    <header class="header">
+    <!-- <header class="header">
         <div class="container header-container">
             <nav class="header-nav">
                 <a class="header-logo link" href="./index.html">
@@ -40,10 +40,10 @@
                 </li>
             </ul>
         </div>
-    </header>
+    </header> -->
 
     <main>
-        <!--(Шапка) Hero-->
+        <!-- (Шапка) Hero-->
         <section class="hero">
             <div class="container">            
                 <h1 class="title">Ефективні рішення для <br> вашого бізнесу</h1>
@@ -141,7 +141,26 @@
                 <ul class="team-list list">
                     <li class="team-items">
                         <div class="team-wrap">
-                            <img src="./images/img_ihor.jpg" alt="фото Ігора Дем'яненко" width="270"> 
+                            <picture>
+                                <source
+                                    srcset="./images/Team/img_ihor_desk_1x.jpg 1x, ./images/Team/img_ihor_desk_2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                >
+                                <source
+                                    srcset="./images/Team/img_ihor_tab_1x.jpg 1x, ./images/Team/img_ihor_tab_2x.jpg 2x"
+                                    media="(min-width: 768px)"
+                                >
+                                <source
+                                    srcset="./images/Team/img_ihor_mob_1x.jpg 1x, ./images/Team/img_ihor_mob_2x.jpg 2x"
+                                    media="(min-width: 320px)"
+                                >
+                                <img                       
+                                    src="./images/Team/img_ihor_mob_1x.jpg" 
+                                    alt="фото Ігора Дем'яненко" 
+                                    width="450"
+                                >
+                            </picture>
+                             
                             <div class="team-members-position">
                                 <h3 class="team-members">Ігор Дем'яненко</h3>
                                 <p class="members-position">Product Designer</p>
@@ -172,7 +191,26 @@
                     </li>    
                     <li class="team-items">
                         <div class="team-wrap">
-                            <img src="./images/img_olha.jpg" alt="фото Ольги Рєпіної" width="270"> 
+                            <picture>
+                                <source
+                                    srcset="./images/Team/img_olha_desk_1x.jpg 1x, ./images/Team/img_olha_desk_2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                >
+                                <source
+                                    srcset="./images/Team/img_olha_tab_1x.jpg 1x, ./images/Team/img_olha_tab_2x.jpg 2x"
+                                    media="(min-width: 768px)"
+                                >
+                                <source
+                                    srcset="./images/Team/img_olha_mob_1x.jpg 1x, ./images/Team/img_olha_mob_2x.jpg 2x"
+                                    media="(min-width: 320px)"
+                                >
+                                <img                              
+                                    src="./images/Team/img_olha_mob_1x.jpg" 
+                                    alt="фото Ольги Рєпіної"
+                                    width="450"
+                                >
+                            </picture>
+                            
                             <div class="team-members-position">
                                 <h3 class="team-members">Ольга Рєпіна</h3>
                                 <p class="members-position">Frontend Developer</p>
@@ -203,7 +241,26 @@
                     </li>   
                     <li class="team-items">
                         <div class="team-wrap">
-                            <img src="./images/img_mykola.jpg" alt="фото Миколи Тарасова" width="270"> 
+                            <picture>
+                                <source
+                                    srcset="./images/Team/img_mykola_desk_1x.jpg 1x, ./images/Team/img_mykola_desk_2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                >
+                                <source
+                                    srcset="./images/Team/img_mykola_tab_1x.jpg 1x, ./images/Team/img_mykola_tab_2x.jpg 2x"
+                                    media="(min-width: 768px)"
+                                >
+                                <source
+                                    srcset="./images/Team/img_mykola_mob_1x.jpg 1x, ./images/Team/img_mykola_mob_2x.jpg 2x"
+                                    media="(min-width: 320px)"
+                                >
+                                <img                              
+                                    src="./images/team/img_mykola_mob_1x.jpg" 
+                                    alt="фото Миколи Тарасова" 
+                                    width="450"
+                                >
+                            </picture>
+                            
                             <div class="team-members-position">
                                 <h3 class="team-members">Микола Тарасов</h3>
                                 <p class="members-position">Marketing</p>
@@ -234,7 +291,26 @@
                     </li>   
                     <li class="team-items">
                         <div class="team-wrap">
-                            <img src="./images/img_mykhailo.jpg" alt="фото Михайла Єрмакова" width="270"> 
+                            <picture>
+                                <source
+                                    srcset="./images/Team/img_mykhailo_desk_1x.jpg 1x, ./images/Team/img_mykhailo_desk_2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                >
+                                <source
+                                    srcset="./images/Team/img_mykhailo_tab_1x.jpg 1x, ./images/Team/img_mykhailo_tab_2x.jpg 2x"
+                                    media="(min-width: 768px)"
+                                >
+                                <source
+                                    srcset="./images/Team/img_mykhailo_mob_1x.jpg 1x, ./images/Team/img_mykhailo_mob_2x.jpg 2x"
+                                    media="(min-width: 320px)"
+                                >
+                                <img                              
+                                    src="./images/team/img_mykhailo_mob_1x.jpg" 
+                                    alt="фото Михайла Єрмакова" 
+                                    width="450"
+                                >
+                            </picture>                           
+
                             <div class="team-members-position">
                                 <h3 class="team-members">Михайло Єрмаков</h3>
                                 <p class="members-position">UI Designer</p>
@@ -309,7 +385,7 @@
 
 
     <!--(підвал) footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer-container">
             <div class="adress-section">
                 <a class="footer-logo link" href="./index.html">
@@ -375,7 +451,7 @@
             </div>
         </div>                  
     </footer> 
-    
+     -->
     
      <!--Modal-->
      <div class="backdrop is-hidden" data-modal>

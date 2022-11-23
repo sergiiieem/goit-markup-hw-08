@@ -8,8 +8,13 @@
     transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
 }
 .modal {
-    width: 528px;
-    min-height: 581px;
+        width: 450px;
+        min-height: 609px;   
+    @media screen and (min-width: 1200px) {    
+        width: 528px;
+        min-height: 581px;
+    }
+
     display: block;
     background-color:var(--bgn-color);
     border-radius: 4px;
@@ -61,6 +66,9 @@
     letter-spacing: 0.03em;
     color: var(--black-color);
     margin-bottom: 12px;
+    @media screen and (min-width: 1200px) {
+        line-height: calc(23 / 20);   
+    }
 }
 
 .modal-input {
@@ -101,7 +109,6 @@
 
 .input-wrap {
     position: relative;
-    margin-bottom: 28px;
 }
 
 .modal-input-svg {
@@ -115,7 +122,7 @@
 }
 
 .comment-wrap {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .modal-user-comment {
@@ -164,15 +171,21 @@
 }
 
 .input-label-privacy {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;     
+    }
 
     color: var(--text-color);
 
     display: flex;
     align-items: center;
-    margin-left: 13px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 13px;    
+    }
 }
 
 .input-label-privacy span {
@@ -212,7 +225,10 @@
         
         display: block;
         position: absolute;
-        bottom: 5px;
+        bottom: 2px;
+        @media screen and (min-width: 1200px) {
+            bottom: 5px;
+        }
     }
 }
 
