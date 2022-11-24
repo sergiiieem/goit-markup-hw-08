@@ -2,10 +2,24 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--line-color);
+
 }
 
 .header-container {
+    width: 100%;
+    height: 100%;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+
     display: flex;
+    align-items: center;
+    position: relative;
+    
+    @media screen and (min-width: 768px) {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 }
 
 .header-nav {
@@ -18,14 +32,43 @@
 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.38;
     letter-spacing: 0.03em;
     color: var(--label-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+    }
 }
 
 .logo-web {
     color: var(--activation-color);
+}
+
+.menu-button-open {
+    width: 40px;
+    height: 40px;
+
+    position: absolute;    
+    background-color: transparent;
+    border-color: transparent;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--black-color);
+    transition: fill 250ms var(--cubic);  
+    
+    &:hover,
+    &:focus {
+    fill: var(--activation-color);
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .header-list {
@@ -33,6 +76,9 @@
     gap: 50px;
     margin-left: 93px;
     width: 281px;
+    @media screen and (max-width: 767px) {
+        display: none;
+        }
 }
 
 .header-item {
@@ -59,7 +105,7 @@
     }
 }
 
-.current::after {
+.header-link .current::after {
     content: "";
     background-color: var(--activation-color);
     width: 100%;
@@ -77,16 +123,26 @@
 
 .header-contacts-list {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     margin-left: auto;
-    gap: 50px;
+    gap: 10px;
+    
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto;
+        gap: 50px;
+    }
 }
 
 .header-contacts {   
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
     font-weight: 500;
     font-size: 14px;
@@ -98,6 +154,11 @@
     &:focus{
     fill: var(--activation-color);
     color: var(--activation-color);  
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 

@@ -13,7 +13,7 @@
 
 <body>
     <!--верхня лінія-->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-container">
             <nav class="header-nav">
                 <a class="header-logo link" href="./index.html">
@@ -39,8 +39,51 @@
                     </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+            <button 
+                class="menu-button-open" 
+                data-menu-open
+                type="button">
+                <svg class="menu-open-svg" width="24" height="16">
+                    <use href="./images/symbol-defs.svg#menu"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="mob-menu-container">
+                    <button
+                    class="mob-menu-button-close"
+                    data-menu-close 
+                    type="button">
+                    <svg class="mob-menu-close-svg" width="19" height="19">
+                        <use href="./images/symbol-defs.svg#menu-close"></use>
+                    </svg>
+                </button>
+                <div class="mob-menu-top">
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu-item"><a class="mob-menu-link current link" href="./index.html">Студія</a></li>
+                        <li class="mob-menu-item"><a class="mob-menu-link link" href="./portfolio.html">Портфоліо</a></li>
+                        <li class="mob-menu-item"><a class="mob-menu-link link" href="Контакти">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="mob-menu-bottom">
+                    <ul class="mob-menu-contacts-list list">
+                        <li>
+                            <a class="mob-menu-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li>
+                            <a class="mob-menu-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>   
+                    </ul>
+                    <ul class="mob-soc list">
+                        <li class="mob-soc-item"><a class="mob-soc-link mob-soc-after link" href="">Instagram</a></li>
+                        <li class="mob-soc-item"><a class="mob-soc-link mob-soc-after link" href="">Twitter</a></li>
+                        <li class="mob-soc-item"><a class="mob-soc-link mob-soc-after link" href="">Facebook</a></li>
+                        <li class="mob-soc-item"><a class="mob-soc-link link" href="">LinkedIn</a></li>    
+                    </ul> 
+                </div>
+            </div>         
+        </div>
+    </header>
 
     <main>
         <!-- (Шапка) Hero-->
@@ -114,19 +157,49 @@
                 <ul class="activity-list activity-section__list list">
                     <li class="activity-list__item">
                         <div class="activity-list__wrap">
-                            <img src="./images/img1.jpg" alt="зображення людини, яка друкує текст" width="370">
+                            <picture>
+                                <source
+                                    srcset="./images/activities/img1_desk_1x.jpg 1x, ./images/activities/img1_desk_2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                >
+                                <img                       
+                                    src="./images/activities/img1_desk_1x.jpg" 
+                                    alt="зображення людини, яка друкує текст" 
+                                    width="370"
+                                >
+                            </picture>
                             <p class="activity-list__text">Десктопні додатки</p>
                         </div>                        
                     </li>
                     <li class="activity-list__item">
                         <div class="activity-list__wrap">
-                            <img src="./images/img2.jpg" alt="зображення людини, яка тримає телефон" width="370">
+                            <picture>
+                                <source
+                                    srcset="./images/activities/img2_desk_1x.jpg 1x, ./images/activities/img2_desk_2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                >
+                                <img                       
+                                    src="./images/activities/img2_desk_1x.jpg"
+                                    alt="зображення людини, яка тримає телефон" 
+                                    width="370"
+                                >
+                            </picture>
                             <p class="activity-list__text">Мобільні додатки</p>
                         </div>                        
                     </li>
                     <li class="activity-list__item">
                         <div class="activity-list__wrap">
-                            <img src="./images/img3.jpg" alt="зображення людини, у якої в пуках планшет" width="370">
+                            <picture>
+                                <source
+                                    srcset="./images/activities/img3_desk_1x.jpg 1x, ./images/activities/img3_desk_2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                >
+                                <img                       
+                                    src="./images/activities/img3_desk_1x.jpg"
+                                    alt="зображення людини, у якої в пуках планшет"
+                                    width="370"
+                                >
+                            </picture>
                             <p class="activity-list__text">Дизайнерські рішення</p>
                         </div>                        
                     </li>
@@ -385,44 +458,46 @@
 
 
     <!--(підвал) footer-->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer-container">
-            <div class="adress-section">
-                <a class="footer-logo link" href="./index.html">
-                    <span class="logo-web">Web</span><span class="logo-studio">Studio </span>
-                </a>                          
-                <address class="address">   
-                    <ul class="address-list list">
-                        <li><a class="map-link link" href="https://goo.gl/maps/aMGptcKbW2b2ZsTe7" target="_blank" rel="noopener noreferrer nofollow" >м. Київ, пр-т Лесі Українки, 26</a></li>
-                        <li><a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="contacts link" href="tel:+380961111111">+38 096 111 11 11</a></li>                
-                    </ul>             
-                </address>
-            </div>      
-            <div class="follow list">
-                <p class="follow-text">Приєднуйтесь</p>
-                <ul class="follow-list list">
-                    <li class="follow-item"><a href="" class="follow-link link">
-                        <svg class="follow-svg" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#instagram"></use>
-                        </svg>
-                    </a></li>
-                    <li class="follow-item"><a href="" class="follow-link link">
-                        <svg class="follow-svg" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#twitter"></use>
-                        </svg>
-                    </a></li>
-                    <li class="follow-item"><a href="" class="follow-link link">
-                        <svg class="follow-svg" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#facebook"></use>
-                        </svg>
-                    </a></li>
-                    <li class="follow-item"><a href="" class="follow-link link">
-                        <svg class="follow-svg" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#linkedin"></use>
-                        </svg>
-                    </a></li>
-                </ul>  
+            <div class="tablet-footer-wrap">
+                <div class="adress-section">
+                    <a class="footer-logo link" href="./index.html">
+                        <span class="logo-web">Web</span><span class="logo-studio">Studio </span>
+                    </a>                          
+                    <address class="address">   
+                        <ul class="address-list list">
+                            <li><a class="map-link link" href="https://goo.gl/maps/aMGptcKbW2b2ZsTe7" target="_blank" rel="noopener noreferrer nofollow" >м. Київ, пр-т Лесі Українки, 26</a></li>
+                            <li><a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li><a class="contacts link" href="tel:+380961111111">+38 096 111 11 11</a></li>                
+                        </ul>             
+                    </address>
+                </div>      
+                <div class="follow">
+                    <p class="follow-text">Приєднуйтесь</p>
+                    <ul class="follow-list list">
+                        <li class="follow-item"><a href="" class="follow-link link">
+                            <svg class="follow-svg" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#instagram"></use>
+                            </svg>
+                        </a></li>
+                        <li class="follow-item"><a href="" class="follow-link link">
+                            <svg class="follow-svg" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#twitter"></use>
+                            </svg>
+                        </a></li>
+                        <li class="follow-item"><a href="" class="follow-link link">
+                            <svg class="follow-svg" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#facebook"></use>
+                            </svg>
+                        </a></li>
+                        <li class="follow-item"><a href="" class="follow-link link">
+                            <svg class="follow-svg" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#linkedin"></use>
+                            </svg>
+                        </a></li>
+                    </ul>  
+                </div>
             </div>
             <div class="subscribe">
                 <form class="subscribe-form">
@@ -451,7 +526,7 @@
             </div>
         </div>                  
     </footer> 
-     -->
+    
     
      <!--Modal-->
      <div class="backdrop is-hidden" data-modal>
@@ -540,6 +615,8 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+
 </body>
 
 </html>

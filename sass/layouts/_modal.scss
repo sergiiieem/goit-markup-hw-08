@@ -6,7 +6,8 @@
     position: fixed;
     top: 0;
     transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
-}
+} 
+
 .modal {
         width: 450px;
         min-height: 609px;   
@@ -50,12 +51,6 @@
     &:focus {
     fill: var(--activation-color);
     }
-}
-
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
 }
 
 .modal-title {
