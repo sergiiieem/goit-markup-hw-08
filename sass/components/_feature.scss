@@ -39,11 +39,16 @@
 
 .feature-list__title {
     margin-bottom: 10px;
+    text-align: center;
 
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 .feature-list__text {
