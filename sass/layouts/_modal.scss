@@ -9,8 +9,15 @@
 } 
 
 .modal {
+
+    width: 320px;
+    min-height: 200px;      
+
+    @media screen and (min-width: 480px) {    
         width: 450px;
-        min-height: 609px;   
+        min-height: 609px; 
+    }
+  
     @media screen and (min-width: 1200px) {    
         width: 528px;
         min-height: 581px;
@@ -56,7 +63,7 @@
 .modal-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--black-color);

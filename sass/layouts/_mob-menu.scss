@@ -76,9 +76,12 @@
 
 .mob-menu-tel {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.18;
     letter-spacing: 0.02em;
+    @media screen and (min-width: 480px) {
+        font-size: 34px;    
+    }
 
     color: var(--activation-color);
     transition: color 250ms var(--cubic);
@@ -116,12 +119,15 @@
 .mob-soc-link {
     display: block;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.22;
     letter-spacing: 0.02em;
 
     color: var(--activation-color);
 
+    @media screen and (min-width: 480px) {
+        font-size: 18px;    
+    }
 }
 
 .mob-soc-after::after {

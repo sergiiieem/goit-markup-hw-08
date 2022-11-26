@@ -193,7 +193,7 @@ body {
   color: var(--activation-color);
 }
 
-.header-link .current::after {
+.header-link.current::after {
   content: "";
   background-color: var(--activation-color);
   width: 100%;
@@ -253,11 +253,30 @@ body {
   }
 }
 
-.header-contacts-svg {
+.header-contacts-svg-mail {
   margin-right: 10px;
   align-items: center;
   justify-content: center;
   fill: currentColor;
+}
+@media screen and (max-width: 1199px) {
+  .header-contacts-svg-mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+.header-contacts-svg-tel {
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+}
+@media screen and (max-width: 1199px) {
+  .header-contacts-svg-tel {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .footer {
@@ -369,20 +388,22 @@ body {
   }
 }
 
+.follow {
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .follow {
+    margin-top: 0px;
+  }
+}
 .follow-text {
   text-align: center;
-  margin-top: 60px;
   color: var(--bgn-color);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-}
-@media screen and (min-width: 768px) {
-  .follow-text {
-    margin-top: 0px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .follow-text {
@@ -418,10 +439,17 @@ body {
   fill: var(--bgn-color);
 }
 
+.subscribe {
+  margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-top: 0;
+  }
+}
 .subscribe-label {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -433,7 +461,6 @@ body {
 @media screen and (min-width: 1200px) {
   .subscribe-label {
     justify-content: start;
-    margin-top: 0px;
   }
 }
 .subscribe-input {
@@ -530,8 +557,8 @@ body {
 }
 
 .modal {
-  width: 450px;
-  min-height: 609px;
+  width: 320px;
+  min-height: 200px;
   display: block;
   background-color: var(--bgn-color);
   border-radius: 4px;
@@ -541,6 +568,12 @@ body {
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--cubic);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -576,7 +609,7 @@ body {
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-color);
@@ -843,11 +876,16 @@ body {
 
 .mob-menu-tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--activation-color);
   transition: color 250ms var(--cubic);
+}
+@media screen and (min-width: 480px) {
+  .mob-menu-tel {
+    font-size: 34px;
+  }
 }
 .mob-menu-tel:hover, .mob-menu-tel:focus {
   color: var(--activation-color);
@@ -876,10 +914,15 @@ body {
 .mob-soc-link {
   display: block;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--activation-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-soc-link {
+    font-size: 18px;
+  }
 }
 
 .mob-soc-after::after {
@@ -1323,17 +1366,17 @@ body {
 }
 
 .clients-list__item {
-  width: calc((100% - 60px) / 2);
+  width: calc((100% - 30px) / 2);
   height: 90px;
 }
 @media screen and (min-width: 768px) {
   .clients-list__item {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .clients-list__item {
-    width: calc((100% - 180px) / 6);
+    width: calc((100% - 150px) / 6);
   }
 }
 
